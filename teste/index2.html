@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento sobre mim</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1> Apresentação </h1>
+    <p class="teste"> Olá, meu nome é Gustavo. Sou estudante de programação e estou aprendendo HTML.</p>
+    <p class="teste teste2"> Estou animado para criar meu primeiro site e compartilhar minhas experiências de aprendizado.</p>   
+    <p class="teste" id="testee"> Espero que você goste do meu trabalho e me acompanhe nessa jornada de aprendizado!</p>  
+    <p> <b>Obrigado por visitar meu site!</b></p> 
+    <a href="gustavoteixeira394@gmail.com"> me envie uma mensagem!</a>
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQd1kWKsODGmz1P44kiLTfpeIOkaemYITnaRVOZEn372xCyrpNoQQ_dMDAV4dWLpVTDFekNEtlkJaDnhlTzoQWdNg" alt="Imagem de gato" width="300" height="200" align="right">
+    <table class="tabela">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>20</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Ana</td>
+            <td>22</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>São Paulo</td>
+        </tr>
+        <tr>
+            <td colspan="3">Lucas</td>
+            <td>19</td>
+            <td>Belo Horizonte</td>
+        </tr>
+    </table>
+    <iframe src="https://www.youtube.com/watch?v=Li5XbLi5Z-Q&ab_channel=FRTTT" width="720" height="480" frameborder="0">
+    </iframe>
+    <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br><br>
+        <input type="checkbox" id="noticias" name="noticias" value="sim">
+        <label for="noticias">Desejo receber notícias</label><br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <h1> Exemplo data e hora de hoje </h1>
+    <p id="data_hoje"></p>
+
+    <script>
+        document.getElementById('data_hoje').innerHTML = Date()
+    </script>
+
+<h2>Exemplo entrada de dados</h2>
+
+<p id="valor"></p>
+
+<script>
+
+var primeiro = parseFloat(prompt("Digite o primeiro número"));
+var segundo = parseFloat(prompt("Digite o segundo número"));
+
+var soma = 3 + segundo;
+document.getElementById("valor").innerHTML = "A soma deu: " +
+soma;
+
+</script>
+
+<h1> Programa cálculo de raízes </h1>
+<h1>A*X<sup>2</sup> + B*X + C = 0</H1>
+<form name="frmRaizes">
+<h1><table>
+<tr><td> Valor de A: <td> <input type="text" placeholder="0.0"
+name="txt_Valor_A">
+<tr><td> Valor de B: <td> <input type="text" placeholder="0.0"
+name="txt_Valor_B">
+<tr><td> Valor de C: <td> <input type="text" placeholder="0.0"
+name="txt_Valor_C">
+</table></h1>
+<p><input type="button" value="Calcular Raízes"
+onclick="calculo_raizes()">
+</form>
+</body>
+</html>

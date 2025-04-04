@@ -1,0 +1,64 @@
+h1 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    border: 20px double #f00;
+    background-color: #000;
+    line-height: 200%;
+    letter-spacing: 20px;
+    border-bottom: 10px double red;
+}
+
+p {
+    color: #000;
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.teste {
+    color: #f00;
+    font-style: italic;
+}
+
+.teste2 {
+    font-weight: bold;
+}
+
+#testee {
+    font-weight: bolder;
+    color:aquamarine;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tabela {
+    border: 1px solid #000;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-spacing: 20px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+tr:hover {
+    background-color: violet;
+}
+tr:nth-child(1) {
+    background-color: #f00;
+    color: #fff;
+}
+tr:nth-child(odd) {
+    background-color: #ccc;
+}
+tr:nth-child(even) {
+    background-color: #fff;
+}
